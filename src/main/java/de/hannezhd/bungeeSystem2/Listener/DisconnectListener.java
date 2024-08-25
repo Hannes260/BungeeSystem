@@ -18,7 +18,7 @@ public class DisconnectListener {
     @Subscribe
     public void onPlayerDisconnect(DisconnectEvent event) {
         Player player = event.getPlayer();
-        String disconnectMessage = "§c☠ §f§l" + player.getUsername() + " §c☠ §fhat den Server verlassen.";
+        String disconnectMessage = "§c☠ §f§l" + player.getUsername() + " §c☠ §7hat den Server verlassen.";
 
         // Broadcast an alle Spieler senden
         for (Player p : server.getAllPlayers()) {
