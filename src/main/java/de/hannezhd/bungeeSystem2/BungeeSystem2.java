@@ -8,6 +8,7 @@ import com.velocitypowered.api.event.proxy.ProxyInitializeEvent;
 import com.velocitypowered.api.proxy.ProxyServer;
 import com.velocitypowered.api.plugin.Plugin;
 import de.hannezhd.bungeeSystem2.Commands.BauWeltCommand;
+import de.hannezhd.bungeeSystem2.Commands.FarmWeltCommand;
 import de.hannezhd.bungeeSystem2.Commands.MsgCommand;
 import de.hannezhd.bungeeSystem2.Commands.ZauberWaldCommand;
 import de.hannezhd.bungeeSystem2.Listener.DisconnectListener;
@@ -40,7 +41,7 @@ public class BungeeSystem2 {
 
         commandManager.register(msgCommandMeta, new MsgCommand(server));
         commandManager.register("zauberwald", new ZauberWaldCommand(server));
-        commandManager.register("farmwelt", new BauWeltCommand(server));
+        commandManager.register("farmwelt", new FarmWeltCommand(server));
         commandManager.register("bauwelt", new BauWeltCommand(server));
 
     }
