@@ -40,7 +40,11 @@ public class BungeeSystem2 {
         commandManager.register("zauberwald", new ZauberWaldCommand(server));
         commandManager.register("farmwelt", new FarmWeltCommand(server));
         commandManager.register("bauwelt", new BauWeltCommand(server));
-        commandManager.register("broadcast", new BroadcastCommand(server));
+
+        CommandMeta BroadcastCommandMeta = commandManager.metaBuilder("broadcast1")
+                .aliases("bc1")
+                .build();
+        commandManager.register(BroadcastCommandMeta, new BroadcastCommand(server));
 
     }
 
